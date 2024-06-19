@@ -23,17 +23,27 @@ elif type == "2":
     i += 1
 
 print(num)
+finalprint = num[0]
+negative = False
 
 i = 0
 while i < len(num):
   binary = ""
+  if num[i] < 0:
+    num[i] *= -1
+    negative = True
   while num[i] > 0:
     binary = str(num[i] % 2) + binary
     num[i] = num[i]//2
+  
   binarystring.append(str(binary))
   i += 1
 
-print(binarystring)
+if type == "1":
+  if negative == True:
+    print("Your number "+ str(finalprint) + "in binary is -" + str(binarystring[0]))
+  else:
+    print("Your number "+ str(finalprint) + "in binary is " + str(binarystring[0]))
 
 
 
