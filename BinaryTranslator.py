@@ -10,13 +10,16 @@ type = input("WELCOME TO BINARY TRANSLATOR WOULD YOU LIKE TO TRANSLATE A NUMBER 
 userInput = []
 
 if type == "1":
-  isFraction = input("Are you going to be translating a fraction? (Y/N): ")
-
-
-  translate = input("WHAT NUMBER WOULD YOU LIKE TO TRANSLATE: ")
-  original = input
-  userInput.append(int(translate))
-  integerTranslate(userInput)
+  isFraction = input("ARE YOU GOING TO BE TRANSLATING A FRACTION? (Y/N): ")
+  if isFraction.lower() == "y":
+    numerator = input("WHAT IS THE NUMERATOR?: ")
+    demoninator =  input("WHAT IS THE DENOMINATOR?: ")
+    fractionBinary(numerator, demoninator)
+  elif isFraction.lower() == "n":
+    translate = input("WHAT NUMBER WOULD YOU LIKE TO TRANSLATE: ")
+    original = input
+    userInput.append(int(translate))
+    print(integerTranslate(userInput))
 elif type =="2":
   translate = input("WHAT STRING WOULD YOU LIKE TO TRANSLATE: ")
   original = translate

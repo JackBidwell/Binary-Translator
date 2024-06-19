@@ -15,7 +15,7 @@ def integerTranslate(array):
     i += 1
 
     if negative == True:
-      print("Your number "+ str(original) + " in binary is -" + str(binarystring[0]))
+      return("-" + str(binarystring[0]))
     else:
-      print("Your number "+ str(original) + " in binary is " + str(binarystring[0]))
+      return(binarystring[0])
 
