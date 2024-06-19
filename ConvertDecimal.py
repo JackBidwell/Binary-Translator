@@ -6,6 +6,8 @@ def fractionBinary(enteredFraction):
     if fraction.is_integer() == True:
       whole = True
     i += 1
+
+  
     
   print(fraction)
 
