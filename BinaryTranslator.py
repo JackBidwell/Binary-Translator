@@ -1,16 +1,17 @@
 # Translate number to Binary with looping remainder
 
 
-
-translate = input("What would you like to translate: ")
-type = input("Would you like to translate a number(1) or a word(2)")
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 alphabetposition = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
-
+num = []
+binarystring = []
+type = input("WELCOME TO BINARY TRANSLATOR WOULD YOU LIKE TO TRANSLATE A NUMBER (1) OR A STRING (2): ")
 
 if type == "1":
-  num = int(translate)
+  translate = input("WHAT NUMBER WOULD YOU LIKE TO TRANSLATE: ")
+  num.append(int(translate))
 elif type == "2":
+  translate = input("WHAT STRING WOULD YOU LIKE TO TRANSLATE: ")
   num = []
   i = 0
   while i < len(translate):
@@ -19,16 +20,21 @@ elif type == "2":
       if translate[i] == alphabet[j]:
         num.append(alphabetposition[j])
       j += 1
+    i += 1
 
 print(num)
 
+i = 0
+while i < len(num):
+  binary = ""
+  while num[i] > 0:
+    binary = str(num[i] % 2) + binary
+    num[i] = num[i]//2
+  binarystring.append(str(binary))
+  i += 1
 
-    
+print(binarystring)
 
-# binary = ""
-# while num > 0:
-#   binary = str(num % 2) + binary
-#   num = num//2
 
-# print(binary)
+
   
