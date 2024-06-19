@@ -12,5 +12,6 @@ def letLocation(string):
         array.append(alphabetposition[j])
       j += 1
     i += 1
-  print(array)
+  return(array)
+  return(spacecount)
 
