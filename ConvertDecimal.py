@@ -10,11 +10,9 @@ def fractionBinary(numerator, denominator):
     if fraction.is_integer() == True:
       whole = True
       array.append(i)
-      print(integerTranslate(array))
-      print(int(integerTranslate(array))/i)
-      
-      # decimalBinary = nonDecimalBinary/i
-      # print(decimalBinary)
+      num = int(integerTranslate(array))
+      print(num/(10**i))
+
     i += 1
 
   
