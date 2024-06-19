@@ -1,0 +1,1 @@
+Using some of pythons operators to translate human readable integers (base 10) into machine readable (base 2) through a series of functions this can convert negative and positive integers, fractions and strings.
