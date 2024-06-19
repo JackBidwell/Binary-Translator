@@ -10,6 +10,9 @@ type = input("WELCOME TO BINARY TRANSLATOR WOULD YOU LIKE TO TRANSLATE A NUMBER 
 userInput = []
 
 if type == "1":
+  isFraction = input("Are you going to be translating a fraction? (Y/N): ")
+
+
   translate = input("WHAT NUMBER WOULD YOU LIKE TO TRANSLATE: ")
   original = input
   userInput.append(int(translate))
